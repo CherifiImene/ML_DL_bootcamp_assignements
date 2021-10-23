@@ -44,7 +44,7 @@ print ("The name ",x," is in the file ? ", x in names)
 
 #6\ Write a Python program to generate 26 text files named A.txt, B.txt, 
 #    and so on up to Z.txt.
-abc_set = string.ascii_uppercase
+abc_set = string.ascii_uppercas
 
 for i in range(26):
     open("./outputs/i_o_hw/"+abc_set[i]+".txt","w")
