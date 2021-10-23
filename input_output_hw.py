@@ -15,17 +15,18 @@ students_file = open("./inputs/i_o_hw/student_names.txt")
 
 students = students_file.read()
 print(students)
-
+students_file.close()
 #2\ Write a list of random names to your file.
 
 students = students + "\nJohnny Depp"+"\nJohn Fish"+"\nElodie Yung"+"\nRyan Reynolds"
 
 students_file = open("./inputs/i_o_hw/student_names.txt","w")
 students_file.write(students)
-
+students_file.close()
 #3\ Read the first n lines of the file.
 file = open("./inputs/i_o_hw/student_names.txt")
 names = file.readlines()
+file.close()
 n = 4
 
 first_n_students = names[:n]
@@ -39,12 +40,12 @@ print("The last ",n," students are :",last_n_students)
 x = "Emilia Clarck"
 file = open("./inputs/i_o_hw/student_names.txt")
 names = file.readlines()
-
+file.close()
 print ("The name ",x," is in the file ? ", x in names)
 
 #6\ Write a Python program to generate 26 text files named A.txt, B.txt, 
 #    and so on up to Z.txt.
-abc_set = string.ascii_uppercas
+abc_set = string.ascii_uppercase
 
 for i in range(26):
     open("./outputs/i_o_hw/"+abc_set[i]+".txt","w")
